@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master DOM Manipulation: Part 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            background-attachment: fixed;
+            font-family: Lato;
+            margin: 0;
+            padding: 0;
+            background-color: #1a4056;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #main-heading {
+            text-align: center;
+            font-size: 50px;
+            margin: 0;
+            margin-top: 30px;
+            color: white;
+        }
+        
+        #heading {
+            color: white;
+            font-size: 25px;
+            margin: 45px 0px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 9%;
+        }
+        
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 20px;
+            margin: 0 30px;
+            padding:0 30px;
+        }
+        
+        button {
+            background-color: transparent;
+            font-style: Arial;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            border-radius: 4px;
+            margin: 45px 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <div class="boxes box-1">
+            <h1 id="heading">Example 1</h1>
+            <button class="btn-1">Enter</button>
+        </div>
+        <div class="boxes box-2">
+            <h1 id="heading">Example 2</h1>
+            <button onclick="alert('I love JavaScript')" class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h1 id="heading">Example 3</h1>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>
